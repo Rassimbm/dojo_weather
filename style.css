@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    height: 80px;
+    background-color: skyblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.top-content {
+    width: 80%;
+    display: flex;
+}
+
+.top-title {
+    flex: 50%;
+}
+
+.top-cities-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 50%;
+    list-style-type: none;
+}
+
+.top-cities-links a {
+    text-decoration: none;
+    color: whitesmoke;
+}
