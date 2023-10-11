@@ -20,6 +20,26 @@
             </ul>
         </div>
     </div>
+    <div class="main">
+        <div class="main-top">
+            <h2>San Jose</h2>
+            <label>Show temperature in 
+                <select class="temp-unit">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="main-bottom" id="alert">
+            <img src="logo/cookie.png" alt="cookie-logo">
+            <div class="alert">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads,<br>to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="acceptCookies('#alert')">I Accept</button>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
