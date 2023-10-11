@@ -85,17 +85,21 @@
     width: 210px;
 }
 
-.degrees #highest {
+.degrees .highest {
     color: hsl(1.07deg 68.29% 48.24%);
     font-size: large;
     font-weight: bolder;
 }
 
-.degrees #lowest {
+.degrees .lowest {
     color: hsl(215.03deg 77.41% 53.14%);
     font-size: large;
     font-weight: bolder;
     }
+
+.highest::after, .lowest::after {
+    content: "°";
+}
 
 .main-bottom {
     padding: 20px;

@@ -14,9 +14,9 @@
         <div class="top-content">
             <h1 class="top-title">DojoWeather</h1>
             <ul class="top-cities-links">
-                <li><a onclick="showWeatherAlert(this)" href="#">Burbank</a></li>
-                <li><a onclick="showWeatherAlert(this)" href="#">Chicago</a></li>
-                <li><a onclick="showWeatherAlert(this)" href="#">Dallas</a></li>
+                <li><a onclick="showWeatherAlert()" href="#">Burbank</a></li>
+                <li><a onclick="showWeatherAlert()" href="#">Chicago</a></li>
+                <li><a onclick="showWeatherAlert()" href="#">Dallas</a></li>
             </ul>
         </div>
     </div>
@@ -24,7 +24,7 @@
         <div class="main-top">
             <h2>San Jose</h2>
             <label>Show temperature in 
-                <select class="temp-unit">
+                <select onchange="convertTempUnit(this)" class="temp-unit">
                     <option>°C</option>
                     <option>°F</option>
                 </select>
@@ -39,8 +39,8 @@
                 </div>
                 <p>some rain</p>
                 <div class="degrees">
-                    <p id="highest">24°</p>
-                    <p id="lowest">18°</p>
+                    <p class="highest" id="temp1">24</p>
+                    <p class="lowest" id="temp2">18</p>
                 </div>
             </div>
             <div class="col">
@@ -50,8 +50,8 @@
                 </div>
                 <p>some sun</p>
                 <div class="degrees">
-                    <p id="highest">27°</p>
-                    <p id="lowest">19°</p>
+                    <p class="highest" id="temp3">27</p>
+                    <p class="lowest" id="temp4">19</p>
                 </div>
             </div>
             <div class="col">
@@ -61,8 +61,8 @@
                 </div>
                 <p>some clouds</p>
                 <div class="degrees">
-                    <p id="highest">21°</p>
-                    <p id="lowest">16°</p>
+                    <p class="highest" id="temp5">21</p>
+                    <p class="lowest" id="temp6">16</p>
                 </div>
             </div>
             <div class="col">
@@ -72,19 +72,19 @@
                 </div>
                 <p>some sun</p>
                 <div class="degrees">
-                    <p id="highest">26°</p>
-                    <p id="lowest">21°</p>
+                    <p class="highest" id="temp7">26</p>
+                    <p class="lowest" id="temp8">21</p>
                 </div>
             </div>
         </div>
 
-        <div class="main-bottom" id="alert">
+        <div class="main-bottom">
             <img src="logo/cookie.png" alt="cookie-logo">
             <div class="alert">
                 <h3>Stop! Cookie time</h3>
                 <p>We use cookies (sadly not the edible ones) to personalize content and ads,<br>to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
             </div>
-            <button onclick="acceptCookies('#alert')">I Accept</button>
+            <button onclick="acceptCookies()">I Accept</button>
         </div>
     </div>
     
